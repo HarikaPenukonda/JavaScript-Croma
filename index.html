@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example to use html with JavaScript</title>
+</head>
+<body>
+    <form>
+    <input placeholder="Enter your email ID"type="text" id="email"/>
+    <br/>
+    <input placeholder="Enter your password"type="password" id="password"/>
+    <br/>
+    <input onclick="clickHandler()" type="checkbox" name="" id=""/> Show/Hide Password
+    <br/>
+    <button>Login</button>
+    </form>
+</body>
+<script>
+    function clickHandler(event){
+        let passwordElement = document.getElementById("password")
+        passwordElement.type = "text";
+    }
+</script>
+
+</html>
